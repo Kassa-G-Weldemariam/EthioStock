@@ -7,7 +7,140 @@
     <title>EthioStock</title>
 </head>
 <body>
-    
+    <header>header goes here</header>
+    <section>
+        <aside>
+            <div>
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Sales</a></li>
+                            <li><a href="">Reports</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li><a href="">Setting</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div>
+                <h1>Sales Overview</h1>
+                <button>Export Data</button>
+                <button type="">Create New Sales</button>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <p>Total Revenue</p>
+                    <h3>$45,365.89</h3>
+                    <small>+20.3% from last month</small>
+                </div>
+                <div>
+                    <p>Orders Completed</p>
+                    <h3>367</h3>
+                    <small>+10.3% from last month</small>
+                </div>
+                <div>
+                    <p>Average Order Value</p>
+                    <h3>$45.89</h3>
+                    <small>+5.3% from last month</small>
+                </div>
+                <div>
+                    <p>Refund Rate</p>
+                    <h3>3.89%</h3>
+                    <small>-0.3% from last month</small>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Daily Sales Trend(Last 7 days)</h3>
+                    <canvas id="lingraph"></canvas>
+                </div>
+                <div>
+                    <h3>Sales by Product Category</h3>
+                    <canvas id="bargraph"></canvas>
+                </div>
+            </div>
+            <h3>Transaction History</h3>
+            <div>
+                <div>
+                    <input type="text" placeholder="search transactions">
+                    <select name="" id="history">
+                        <option value="Last year">Last year</option>
+                        <option value="Last month">Last month</option>
+                        <option value="Last 7 days">Last 7 days</option>
+                        <option value="yesterday">yesterday</option>
+                        <option value="Today">Today</option>
+                    </select>
+                    <select name="" id="customer">
+                        <option value="All customers">All customers</option>
+                        <option value="customer 1">customers 1</option>
+                        <option value="customer 2">customers 2</option>
+                        <option value="customer 3">customers 3</option>
+                        <option value="customer 4">customers 4</option>
+                    </select>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>OrderID</th>
+                            <th>customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr>
+                            <td>ORD001</td>
+                            <td>Kassa</td>
+                            <td>2025-10-25</td>
+                            <td>$120</td>
+                            <td>Completed</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>ORD002</td>
+                            <td>Kebede</td>
+                            <td>2025-10-20</td>
+                            <td>$100</td>
+                            <td>Canceled</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>ORD002</td>
+                            <td>Tsegay</td>
+                            <td>2025-10-27</td>
+                            <td>$110</td>
+                            <td>Pending</td>
+                            <td>...</td>
+                        </tr>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <button>Previous</button>
+                    <p>page 1</p>
+                    <p>of 2</p>
+                    <button>Next</button>
+                </div>
+            </div>
+        
+        </main>
+    </section>
+    <footer>
+        <div>
+            <p>&c 2025 EthioStock. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="script.js" defer></script>
 </body>
 </html>
