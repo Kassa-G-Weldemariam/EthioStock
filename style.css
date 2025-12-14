@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header section */
+header{
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    position:sticky;
+    top: 0;
+    z-index: 100;
+}
+/* side and main */
+.main-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+/* side */
+aside{
+    flex: 1;
+    background: #f0f0f0;
+    width: 30%;
+    height: 410px;
+
+}
+.aside-1{
+    height: 80%;
+    width: 100%;
+}
+aside  a{
+    display: inline-block;
+    padding: 10px 35px;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
+}
+aside a:hover{
+    background:lab(84.51% 1.37 0.48);
+}
+.active{
+    background:gray;
+    color: #f0f0f0;
+}
+main{
+    flex: 6;
+}
+/* footer */
+footer{
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
